@@ -35,7 +35,7 @@ void setup() {
   // Initial password check
   checkPassword();
 
-  Serial.print("Password: ");
+  Serial.print("Input password: ");
   for (int i = 0; i < NUM_POTS; i++) {
     Serial.print(inputs[i]);
     Serial.print(" ");
@@ -81,7 +81,7 @@ void loop() {
   if (hasStopped) {
     checkPassword();
 
-    Serial.print("Password: ");
+    Serial.print("Input password: ");
     for (int i = 0; i < NUM_POTS; i++) {
       Serial.print(inputs[i]);
       Serial.print(" ");
